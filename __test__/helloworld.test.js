@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../app');
+const app = require('../core/infrastructure/controller/hello-world');
 describe('GET /', () => {
     it('responde con Hola Mundo!', done => {
         request(app)
