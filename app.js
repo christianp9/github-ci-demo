@@ -23,6 +23,7 @@ router2.get('/admin', function (req, res, next) {
 router3.get('/resta', function (req, res, next) {
     let a = 8;
     let b = 7;
+
     let resultado = a-b;
     res.send('la resta de a - b es = '+resultado);
 });
