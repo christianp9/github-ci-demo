@@ -20,9 +20,11 @@ router2.get('/admin', function (req, res, next) {
     res.end();
 });
 
-router3.get('/student', function (req, res, next) {
-    console.log("Student Router Working");
-    res.end();
+router3.get('/resta', function (req, res, next) {
+    let a = 8;
+    let b = 7;
+    let resultado = a-b;
+    res.send('la resta de a - b es = '+resultado);
 });
 
 app.use(router1);
