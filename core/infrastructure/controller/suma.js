@@ -5,5 +5,6 @@ holamundo.get('/suma', (req, res) =>{
     let b = 3;
     let resultado =  a+b;
         res.send('el resultado de a + b es =' + resultado);
+
 });
 module.exports = holamundo;
