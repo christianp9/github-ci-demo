@@ -15,9 +15,11 @@ router1.get('/suma', function (req, res, next) {
     res.send('la suma de a + b es = '+resultado);
 });
 
-router2.get('/admin', function (req, res, next) {
-    console.log("Admin Router Working");
-    res.end();
+router2.get('/division', function (req, res, next) {
+    let a = 10;
+    let b = 2;
+    let resultado = a/b;
+    res.send('la division de a / b es = '+resultado);
 });
 
 router3.get('/student', function (req, res, next) {
