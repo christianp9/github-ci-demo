@@ -1,9 +1,9 @@
 const request = require('supertest');
-const app = require('../core/infrastructure/controller/hello-world');
+const app = require('../core/infrastructure/controller/suma');
 describe('GET /', () => {
-    it('responde con Hola Mundo!', done => {
+    it('responde con el resultado de a + b es =5', done => {
         request(app)
             .get('/')
-            .expect('Hello world!', done);
+            .expect('el resultado de a + b es =5', done);
     });
 });
