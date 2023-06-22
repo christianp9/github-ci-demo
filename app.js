@@ -31,7 +31,7 @@ app.use(router1);
 app.use(router2);
 app.use(router3);
 
-app.listen(PORT, function (err) {
+module.exports = app.listen(PORT, function (err) {
     if (err) console.log(err);
     console.log("Server listening on PORT", PORT);
 });
