@@ -6,7 +6,6 @@ describe('GET /', () => {
         request(operacionesService)
             .get('/resta')
             .expect('la resta de a - b es = 1', done);
-        done()
     });
 });
 

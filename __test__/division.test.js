@@ -5,6 +5,5 @@ describe('GET /', () => {
         request(operacionesService)
             .get('/division')
             .expect('la division de a / b es = 5', done);
-        done()
     });
 });
